@@ -41,6 +41,15 @@
     {% if messages %}
     <div class="message-container"></div>
     {% endif %}
-    
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer class="container-fluid fixed-bottom"></footer>
+
+    {% block postloadjs %}
+    {% endblock %}
 </body>
 </html>
