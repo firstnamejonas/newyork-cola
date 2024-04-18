@@ -107,6 +107,22 @@ body {
     border-radius: 10px;
 }
 
+/*-------------------------------------------------------------------- Product-Section: */
+
+.product-facts-container {
+    background-color: red;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#about-product-section p {
+    color: white;
+}
+
+#about-product-section i {
+    color: white;
+}
+
 
 /*-------------------------------------------------------------------- Footer: */
 
