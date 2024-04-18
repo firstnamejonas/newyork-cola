@@ -81,8 +81,8 @@
             </div>
             <div class="icon-header-div">
                 <!--Cart & User Icon-->
-                <i class="bi bi-person-circle header-icon icon-margin-large-screens"></i>
-                <i class="bi bi-bag-fill ms-3 header-icon"></i>
+                <i class="bi bi-person-circle header-icon icon-margin-large-screens fs-3"></i>
+                <i class="bi bi-bag-fill ms-3 header-icon fs-3"></i>
             </div>
         </div>
     </nav>
@@ -96,7 +96,22 @@
         {% endblock %}
     </main>
 
-    <footer class="container-fluid fixed-bottom"></footer>
+    <footer class="container-fluid fixed-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 text-start">
+                    <p>&copy; Jonas Hessling</p>
+                </div>
+                <div class="col-6 text-end">
+                    <p>
+                        Links: 
+                        <a href="#"><i class="bi bi-github"></i></a> | 
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     {% block postloadjs %}
     {% endblock %}
