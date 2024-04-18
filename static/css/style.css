@@ -16,6 +16,12 @@
     background-color: red;
 }
 
+.menu-header-heading {
+    font-family: "Rubik", sans-serif !important;
+    color: white;
+    font-weight: 800;
+}
+
 .header-icon {
     color: white;
 }
