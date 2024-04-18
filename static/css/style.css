@@ -30,6 +30,38 @@ body {
     color: white;
 }
 
+/*-------------------------------------------------------------------- Hero-Section: */
+
+#hero-section {
+    height: 100vh;
+    background: url("/static/images/hero-image-newyork.jpg") rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section-heading {
+    font-family: "Rubik", sans-serif;
+    font-weight: 800;
+    color: white;
+}
+
+.custom-button-white-font {
+    background-color: red;
+    border: 1px solid red;
+}
+
+.custom-button-white-font:hover {
+    background: transparent;
+    border: 1px solid red;
+}
+
+
 /*-------------------------------------------------------------------- Footer: */
 
 footer {
