@@ -1,11 +1,15 @@
+/*-------------------------------------------------------------------- General: */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 /*-------------------------------------------------------------------- Header: */
 
 .header-color {
     background-color: red;
 }
 
-.logo {
-    max-width: 150px;
+.logo-anchor {
+    font-family: "Rubik", sans-serif;
+    font-weight: 800;
 }
 
 .sidebar {
