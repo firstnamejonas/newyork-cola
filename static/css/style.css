@@ -149,6 +149,12 @@ footer i:hover {
     .icon-margin-large-screens {
         margin-left: 20px;
     }
+
+    .contest-image {
+        width: 500px;
+        height: 500px;
+        object-fit: cover;
+    }
 }
 
 @media only screen and (max-width: 991px) {
