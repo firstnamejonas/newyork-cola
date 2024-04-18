@@ -61,6 +61,29 @@ body {
     border: 1px solid red;
 }
 
+/*-------------------------------------------------------------------- About-Section: */
+
+.white-bg-heading {
+    font-family: "Rubik", sans-serif;
+    font-weight: 800;
+    color: red;
+}
+
+.can-image {
+    width: 250px;
+}
+
+.custom-button-black-font {
+    background-color: red;
+    border: 1px solid red;
+}
+
+.custom-button-black-font:hover {
+    background: transparent;
+    border: 1px solid red;
+    color: #0e0e0e;
+}
+
 
 /*-------------------------------------------------------------------- Footer: */
 
