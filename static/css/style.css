@@ -84,6 +84,29 @@ body {
     color: #0e0e0e;
 }
 
+/*-------------------------------------------------------------------- Contest-Section: */
+
+#contest-section {
+    background-color: red;
+}
+
+.red-bg-heading {
+    font-family: "Rubik", sans-serif;
+    font-weight: 800;
+    color: white;
+}
+
+#contest-section p {
+    color: white;
+}
+
+.contest-image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
 
 /*-------------------------------------------------------------------- Footer: */
 
