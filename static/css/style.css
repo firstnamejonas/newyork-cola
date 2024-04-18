@@ -16,6 +16,25 @@
     color: white;
 }
 
+/*-------------------------------------------------------------------- Footer: */
+
+footer {
+    background-color: red;
+}
+
+footer p {
+    color: white;
+    margin: 20px 0;
+}
+
+footer i {
+    color: white;
+}
+
+footer i:hover {
+    color: #0e0e0e;
+}
+
 /*-------------------------------------------------------------------- Media Query: */
 
 @media only screen and (min-width: 992px) {
