@@ -123,6 +123,21 @@ body {
     color: white;
 }
 
+/*-------------------------------------------------------------------- Socials-Section: */
+
+#socials-section {
+    background-color: red;
+}
+
+#socials-section p {
+    color: white;
+}
+
+#socials-section a {
+    color: white;
+    font-size: 30px;
+    margin: 0 20px;
+}
 
 /*-------------------------------------------------------------------- Footer: */
 
