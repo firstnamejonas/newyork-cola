@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_title %}| All Colas{% endblock %}
+
+{% block content %}
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-6 col-xs-12 text-center">
+                <img class="product-image-size" src="{{ cola.product_image.url }}" alt="{{ cola.product_name }}">
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <h1 class="white-bg-heading">{{ cola.product_name }}</h1>
+                <p><strong>{{ cola.price }} € / per can</strong></p>
+                <p>{{ cola.product_description }}</p>
+                <details>
+                    <summary>Ingredients</summary>
+                    <p>{{ cola.ingredients }}</p>
+                </details>
+                <hr>
+                <details>
+                    <summary>Nutrition Facts</summary>
+                    <p>{{ cola.nutrition_facts }}</p>
+                </details>
+                <hr>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
