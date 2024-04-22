@@ -11,4 +11,4 @@ class Cola(models.Model):
     nutrition_facts = models.TextField(max_length=500, null=True, blank=True)
 
     def __str__(self):
-        return self.name
+        return self.product_name
