@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from .models import Cola
 
 
@@ -16,3 +16,17 @@ def all_colas(request):
     }
 
     return render(request, 'colas/all_colas.html', context)
+
+
+def product_page(request, cola_id):
+    """
+    View to display product page of a cola.
+    """
+
+    cola = get_object_or_404(Cola, pk=cola_id)
+
+    context = {
+        'cola': cola,
+    }
+
+    return render(request, 'colas/product_page.html', context)
