@@ -28,6 +28,14 @@ body {
 
 .header-icon {
     color: white;
+    margin-right: 5px;
+}
+
+.icon-header-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 /*-------------------------------------------------------------------- Hero-Section: */
@@ -163,6 +171,7 @@ footer i:hover {
 @media only screen and (min-width: 992px) {
     .icon-margin-large-screens {
         margin-left: 20px;
+        margin-right: 20px;
     }
 
     .contest-image {
