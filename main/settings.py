@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'cloudinary_storage',
     # Required by allauth:
     'django.contrib.sites',
     'allauth',
@@ -52,6 +53,8 @@ INSTALLED_APPS = [
     # Project-Apps:
     'home',
     'colas',
+    #cloudinary
+    'cloudinary',
 ]
 
 MIDDLEWARE = [
