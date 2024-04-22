@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     # Project-Apps:
     'home',
+    'colas',
 ]
 
 MIDDLEWARE = [
