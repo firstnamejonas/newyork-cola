@@ -80,10 +80,34 @@
                     </div>
                 </div>
             </div>
+            <!--Shopphing Cart & User Navigation Links-->
             <div class="icon-header-div">
-                <!--Cart & User Icon-->
-                <i class="bi bi-person-circle header-icon icon-margin-large-screens fs-3"></i>
-                <i class="bi bi-bag-fill ms-3 header-icon fs-3"></i>
+                <!--User Menu / Icon-->
+                <div class="dropdown">
+                    <i class="bi bi-person-circle dropdown-toggle header-icon icon-margin-large-screens fs-3" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                    <ul class="dropdown-menu">
+                    {% if request.user.is_authenticated %}
+                        <li><a href="" class="dropdown-item">My Profile</a></li>
+                        <li><a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a></li>
+                    {% else %}
+                        <li><a href="{% url 'account_signup' %}" class="dropdown-item">Register</a></li>
+                        <li><a href="{% url 'account_login' %}" class="dropdown-item">Login</a></li>
+                    {% endif %}
+                    </ul>
+                </div>
+                <!--Cart Link / Icon-->
+                <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-white{% endif %} nav-link" href="">
+                    <div class="text-center">
+                        <i class="bi bi-bag-fill"></i>
+                        <p class="my-0">
+                            {% if grand_total %}
+                                ${{ grand_total|floatformat:2 }}
+                            {% else %}
+                                $0.00
+                            {% endif %}
+                        </p>
+                    </div>
+                </a>
             </div>
         </div>
     </nav>
