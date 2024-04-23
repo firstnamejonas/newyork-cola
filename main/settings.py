@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'home',
     'colas',
     'bag',
+    'checkout',
     #cloudinary
     'cloudinary',
 ]
