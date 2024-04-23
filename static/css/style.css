@@ -166,6 +166,12 @@ main {
     width: fit-content;
 }
 
+/*-------------------------------------------------------------------- Shopping Bag Page: */
+
+.bag-product-img {
+    width: 50px;
+}
+
 /*-------------------------------------------------------------------- Footer: */
 
 footer {
@@ -201,6 +207,10 @@ footer i:hover {
 
     .product-image-size {
         width: 400px;
+    }
+
+    .bag-product-img {
+        width: 150px;
     }
 }
 
