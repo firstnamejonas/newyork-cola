@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     # Project-Apps:
     'home',
     'colas',
+    'bag',
     #cloudinary
     'cloudinary',
 ]
