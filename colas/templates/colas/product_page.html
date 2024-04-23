@@ -29,14 +29,7 @@
                     {% csrf_token %}
                     <div class="form-row">
                         <div class="col-12">
-                            <p class="mt-3"><strong>Choose your pack size:</strong></p>
-                            <select class="form-select form-select mb-3" aria-label="Large select example">
-                                <option selected>Click here to choose</option>
-                                <option value="1">6-Pack</option>
-                                <option value="2">12-Pack</option>
-                                <option value="3">21-pack</option>
-                            </select>
-                            <p class="mt-3"><strong>Quantity of Packs:</strong></p>
+                            <p class="mt-3"><strong>Quantity:</strong></p>
                             <div class="form-group w-50">
                                 <div class="input-group">
                                     <input class="form-control qty_input" type="number" name="quantity" value="1" min="1" max="99" data-item_id="{{ cola.id }}" id="id_qty_{{ cola.id }}">
@@ -45,7 +38,7 @@
                         </div>
 
                         <div class="col-12">
-                            <input type="submit" class="btn btn custom-button-black-font mt-3" value="Add to Bag">
+                            <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5" value="Add to Bag">
                         </div>
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
                     </div>
