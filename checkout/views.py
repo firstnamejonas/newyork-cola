@@ -37,6 +37,12 @@ def checkout(request):
             for item_id, quantity in bag.items():
                 try:
                     product = Cola.objects.get(id=item_id)
+                    order_line_item = OrderLineItem(
+                        order=order,
+                        product=product,
+                        quantity=quantity
+                    )
+                    order_line_item.save()
                 except Cola.DoesNotExist:
                     messages.error(request, (
                         "One of the products in your bag wasn't found in our database. "
