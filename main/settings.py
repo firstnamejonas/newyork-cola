@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     'colas',
     'bag',
     'checkout',
+    'userprofiles',
     #cloudinary
     'cloudinary',
     # Django Crispy Forms
