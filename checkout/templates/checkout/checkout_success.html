@@ -155,7 +155,11 @@
     </div>
     <div class="row">
         <div class="col">
+            {% if from_profile %}
+            <a href="{% url 'profile' %}" class="btn custom-button-black-font">Back to Profile</a>
+            {% else %}
             <a class="btn custom-button-black-font" href="#">WIN FREE NYC TRIP</a>
+            {% endif %}
         </div>
     </div>
 </div>
