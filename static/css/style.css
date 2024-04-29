@@ -172,6 +172,10 @@ main {
     width: 50px;
 }
 
+.update-link, .remove-item {
+    cursor: pointer;
+}
+
 /*-------------------------------------------------------------------- Checkout Page: */
 
 .StripeElement {
