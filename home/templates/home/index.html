@@ -20,19 +20,21 @@
 <section id="about-section">
     <div class="container mt-5">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-12 text-center">
                 <h2 class="white-bg-heading">TASTE NEW YORK</h2>
-                <p class="mt-3">
+                <p class="mt-3 w-75 m-auto">
                     Welcome to the heart of the city that never sleeps – 
                     where every sip of New York Cola is infused with the vibrant energy of the Big Apple. 
                     Crafted to capture the essence of urban life, our cola embodies the hustle, the bustle, 
                     and the unforgettable spirit of New York City. Bold, dynamic, and unmistakably New York. 
                     Open a bottle, take a taste, and let the city awaken your senses. New York Cola: Taste the City.
                 </p>
-                <a class="btn btn-danger custom-button-black-font mt-2" href="{% url 'colas' %}" role="button">Buy Now!</a>
             </div>
-            <div class="col text-center">
+            <div class="col-12 text-center my-5">
                 <img class="can-image" src="{% static 'images/newyorkcola-can.png' %}" alt="Image of the New York Cola Can">
+            </div>
+            <div class="col-12 text-center">
+                <a class="btn btn-danger custom-button-black-font mt-2" href="{% url 'colas' %}" role="button">Buy Now!</a>
             </div>
         </div>
     </div>
