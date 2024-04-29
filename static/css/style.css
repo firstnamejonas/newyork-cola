@@ -185,6 +185,29 @@ main {
     transition: box-shadow 150ms ease;
 }
 
+/*-------------------------------------------------------------------- Contest Page: */
+
+#hero-section-contestpage {
+    height: 100vh;
+    background: url("/static/images/hero-image-newyork.jpg") rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-section-contestpage p {
+    color: white;
+}
+
+#hero-section-contestpage i {
+    color: white;
+}
+
 /*-------------------------------------------------------------------- Footer: */
 
 footer {
