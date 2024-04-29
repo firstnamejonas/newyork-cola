@@ -1,3 +1,7 @@
 from django.contrib import admin
+from .models import Contest
 
-# Register your models here.
+class ContestAdmin(admin.ModelAdmin):
+    list_display = ('contest_username', 'contest_ordernumber')
+
+admin.site.register(Contest, ContestAdmin)
