@@ -42,6 +42,10 @@ main {
     justify-content: center;
 }
 
+.bag-total {
+    font-size: xx-small;
+}
+
 /*-------------------------------------------------------------------- Hero-Section: */
 
 #hero-section {
@@ -237,6 +241,10 @@ footer i:hover {
     .icon-margin-large-screens {
         margin-left: 20px;
         margin-right: 20px;
+    }
+
+    .bag-total {
+        font-size: small;
     }
 
     .contest-image {

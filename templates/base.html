@@ -100,7 +100,7 @@
                 <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-white{% endif %} nav-link" href="{% url 'view_bag' %}">
                     <div class="text-center">
                         <i class="bi bi-bag-fill"></i>
-                        <p class="my-0">
+                        <p class="my-0 bag-total">
                             {% if total %}
                                 €{{ total|floatformat:2 }}
                             {% else %}
