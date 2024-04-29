@@ -5,17 +5,46 @@
 
 {% block content %}
 
-<section id="contest-form-section">
+<!--Hero-Section-Contestpage:-->
+<section id="hero-section-contestpage">
     <div class="container">
         <div class="row">
+            <div class="col text-center">
+                <h1 class="hero-section-heading">
+                    WIN A FREE TRIP FOR YOU & YOUR +1 TO NEW YORK CITY!
+                </h1>
+                <h2 class="white-bg-heading mt-3">What to win:</h2>
+                <p>
+                    <i class="bi bi-calendar3"></i> <strong>7 Nights</strong> in the City that never sleeps
+                    <br>
+                    <i class="bi bi-people-fill"></i> <strong>You</strong> and your +1
+                    <br>
+                    <i class="bi bi-airplane"></i> <strong>FREE</strong> Flights
+                    <br>
+                    <i class="bi bi-building-fill-check"></i> <strong>FREE</strong> 5-Star Hotel (incl. Breakfast)
+                    <br>
+                    <i class="bi bi-pass"></i> <strong>FREE</strong> 7 Day New York City Pass
+                    <br>
+                    <i class="bi bi-cash"></i> <strong>500$</strong> extra for you to spend
+                </p>
+                <a class="btn btn-danger custom-button-white-font mt-3" href="#" role="button">Enter here!</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Form-Section:-->
+<section id="contest-form-section">
+    <div class="container my-5">
+        <div class="row text-center">
             <div class="col-12">
-                <h2 class="white-bg-heading">Fill out this form below:</h2>
+                <h2 class="white-bg-heading">Fill out the form below to enter the contest:</h2>
                 <p><i class="bi bi-exclamation-circle-fill"></i> Please be aware of the following:</p>
                 <p class="text-muted">
                     <i class="bi bi-check-circle-fill"></i>
                     You must have a valid user account, if you don't have one yet, <a href="">sign up here</a>!
                 </p>
-                <p class="text-muted">
+                <p class="text-muted w-75 m-auto">
                     <i class="bi bi-check-circle-fill"></i>
                     You must have a valid order number, you can find in your order history,
                     <a href="">on your profile page</a>! If you haven't ordered something yet,
@@ -23,7 +52,7 @@
                 </p>
             </div>
             <div class="col-12">
-                <form class="mt-3" action="{% url 'contest_page' %}" method="POST" id="contest-entry-form">
+                <form class="w-75 m-auto" action="{% url 'contest_page' %}" method="POST" id="contest-entry-form">
                     {% csrf_token %}
                     {{ form|crispy }}
                     <button class="btn custom-button-black-font mt-3">Submit Contest Entry!</button>
