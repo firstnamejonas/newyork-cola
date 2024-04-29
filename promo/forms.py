@@ -18,7 +18,6 @@ class ContestForm(forms.ModelForm):
             'contest_ordernumber': 'Your Ordernumber',
         }
 
-        self.fields['contest_username'].widget.attrs['autofocus'] = True
         for field in self.fields:
             if self.fields[field].required:
                 placeholder = f'{placeholders[field]} *'
