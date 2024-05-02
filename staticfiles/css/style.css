@@ -42,6 +42,10 @@ main {
     justify-content: center;
 }
 
+.bag-total {
+    font-size: xx-small;
+}
+
 /*-------------------------------------------------------------------- Hero-Section: */
 
 #hero-section {
@@ -150,6 +154,12 @@ main {
     color: white;
     font-size: 30px;
     margin: 0 20px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+#socials-section a:hover {
+    color: lightgray;
 }
 
 /*-------------------------------------------------------------------- All Products Page: */
@@ -170,6 +180,46 @@ main {
 
 .bag-product-img {
     width: 50px;
+}
+
+.update-link, .remove-item {
+    cursor: pointer;
+}
+
+/*-------------------------------------------------------------------- Checkout Page: */
+
+.StripeElement {
+    box-sizing: border-box;
+    height: 40px;
+    padding: 10px 12px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    background-color: white;
+    -webkit-transition: box-shadow 150ms ease;
+    transition: box-shadow 150ms ease;
+}
+
+/*-------------------------------------------------------------------- Contest Page: */
+
+#hero-section-contestpage {
+    height: 100vh;
+    background: url("/static/images/hero-image-newyork.jpg") rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-section-contestpage p {
+    color: white;
+}
+
+#hero-section-contestpage i {
+    color: white;
 }
 
 /*-------------------------------------------------------------------- Footer: */
@@ -199,14 +249,14 @@ footer i:hover {
         margin-right: 20px;
     }
 
+    .bag-total {
+        font-size: small;
+    }
+
     .contest-image {
         width: 500px;
         height: 500px;
         object-fit: cover;
-    }
-
-    .product-image-size {
-        width: 400px;
     }
 
     .bag-product-img {
