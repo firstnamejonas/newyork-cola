@@ -23,7 +23,7 @@ class ContactForm(forms.ModelForm):
             'contact_full_name': 'Your Full Name',
             'contact_email': 'Your Email',
             'contact_ordernumber': 'Your Ordernumber (optional)',
-            'contact_issue': 'Choose an Issue (optional)',
+            'contact_issue': None,
             'contact_message': 'Your message for us....',
         }
 
@@ -35,3 +35,7 @@ class ContactForm(forms.ModelForm):
             self.fields[field].widget.attrs['placeholder'] = placeholder
             self.fields[field].widget.attrs['class'] = 'mt-3 text-muted'
             self.fields[field].label = False
+
+            # Assign custom classes for 'contact_issue' field
+            if field == 'contact_issue':
+                self.fields[field].widget.attrs['class'] += ' form-select'
