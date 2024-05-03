@@ -46,7 +46,9 @@
                                     {{ order.date }}
                                 </td>
                                 <td>
-                                    {{ order.product.product_name }} x {{ order.quantity }}
+                                    {% for item in order.lineitems.all %}
+                                    {{ item.product.product_name }} x {{ item.quantity }}
+                                    {% endfor %}
                                 </td>
                                 <td class="text-end">
                                     € {{ order.order_total }}
