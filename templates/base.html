@@ -78,27 +78,29 @@
                         <li class="nav-item">
                             <a class="nav-link active" href="{% url 'contact_page' %}">Contact</a>
                         </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-person-circle" data-bs-toggle="dropdown" aria-expanded="false" role="list"></i>
+                                User
+                            </a>
+                            <ul class="dropdown-menu mb-2">
+                                {% if request.user.is_authenticated %}
+                                    <li><a href="{% url 'profile' %}" class="dropdown-item">My Profile</a></li>
+                                    <li><a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a></li>
+                                {% else %}
+                                    <li><a href="{% url 'account_signup' %}" class="dropdown-item">Register</a></li>
+                                    <li><a href="{% url 'account_login' %}" class="dropdown-item">Login</a></li>
+                                {% endif %}
+                            </ul>
+                        </li>
                     </ul>
                     <div class="d-grid gap-2">
                         <a href="{% url 'colas' %}" class="btn btn-light">Buy Now!</a>
                     </div>
                 </div>
             </div>
-            <!--Shopphing Cart & User Navigation Links-->
-            <div class="icon-header-div">
-                <!--User Menu / Icon-->
-                <div class="dropdown">
-                    <i class="bi bi-person-circle dropdown-toggle header-icon icon-margin-large-screens fs-3" data-bs-toggle="dropdown" aria-expanded="false"></i>
-                    <ul class="dropdown-menu">
-                    {% if request.user.is_authenticated %}
-                        <li><a href="{% url 'profile' %}" class="dropdown-item">My Profile</a></li>
-                        <li><a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a></li>
-                    {% else %}
-                        <li><a href="{% url 'account_signup' %}" class="dropdown-item">Register</a></li>
-                        <li><a href="{% url 'account_login' %}" class="dropdown-item">Login</a></li>
-                    {% endif %}
-                    </ul>
-                </div>
+            <!--Shopphing Cart Link-->
+            <div class="icon-header-div ms-2">
                 <!--Cart Link / Icon-->
                 <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-white{% endif %} nav-link" href="{% url 'view_bag' %}">
                     <div class="text-center">
