@@ -126,6 +126,30 @@
     </div>
 </section>
 
+<!--Newsletter-Section:-->
+<section id="newsletter-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center my-5">
+                <h2 class="red-bg-heading">Newsletter:</h2>
+                <p>
+                    Sign Up to our newsletter and don't ever miss out
+                    on special deals, gifts, contests and more!
+                    <br>
+                    Just sign up with the form below:
+                </p>
+                <div class="col-12">
+                    <form class="w-75 m-auto" action="{% url 'home' %}" method="POST" id="newsletter-entry-form">
+                        {% csrf_token %}
+                        {{ form|crispy }}
+                        <button class="btn btn-light mt-3">Signup!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!--Socials-Section:-->
 <section id="socials-section">
     <div class="container">
