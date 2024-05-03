@@ -32,3 +32,7 @@ class UserProfileForm(forms.ModelForm):
                 self.fields[field].widget.attrs['placeholder'] = placeholder
             self.fields[field].widget.attrs['class'] = 'mt-3'
             self.fields[field].label = False
+
+            # Assign custom classes for 'default_country' field
+            if field == 'default_country':
+                self.fields[field].widget.attrs['class'] += ' form-select'
