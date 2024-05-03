@@ -162,6 +162,16 @@ main {
     color: lightgray;
 }
 
+/*-------------------------------------------------------------------- Newsletter-Section: */
+
+#newsletter-section {
+    background-color: red;
+}
+
+#newsletter-section p {
+    color: white;
+}
+
 /*-------------------------------------------------------------------- All Products Page: */
 
 .product-image-size {
