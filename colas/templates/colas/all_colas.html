@@ -18,7 +18,7 @@
                     <img class="product-image-size" src="{{ cola.product_image.url }}" alt="{{ cola.product_name }}">
                     <h5 class="white-bg-heading">{{ cola.product_name }}</h5>
                     <p class="card-text">{{ cola.price }} € / per can</p>
-                    <a href="{% url 'product_page' cola.id %}" class="btn btn-primary custom-button-black-font">Buy Now!</a>
+                    <a href="{% url 'product_page' cola.id %}" class="btn custom-button-black-font">Buy Now!</a>
                 </div>
             </div>
             {% endfor %}
