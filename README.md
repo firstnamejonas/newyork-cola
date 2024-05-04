@@ -50,3 +50,26 @@ source: [amiresponsive](https://ui.dev/amiresponsive?url=https://newyork-cola-c0
 - As a registered site user, I can view my latest purchases so that I can keep track of what I've purchased.
 - As a returning site user, I can contact the company so that I can ask questions on my orders, get help, etc.
 
+## Wireframes
+
+To follow best practice, wireframes were developed for mobile, tablet, and desktop sizes.
+I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wireframes.
+
+### Mobile Wireframes
+
+| Home | Contact | Contest | All Colas | Product Page | Bag | Checkout | Profile |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| ![screenshot](documentation/wireframes/mobile-home.png) | ![screenshot](documentation/wireframes/mobile-contact.png) | ![screenshot](documentation/wireframes/mobile-contest.png) | ![screenshot](documentation/wireframes/mobile-allproducts.png) | ![screenshot](documentation/wireframes/mobile-product.png) | ![screenshot](documentation/wireframes/mobile-bag.png) | ![screenshot](documentation/wireframes/mobile-checkout.png) | ![screenshot](documentation/wireframes/mobile-profile.png) |
+
+### Tablet Wireframes
+
+| Home | Contact | Contest | All Colas | Product Page | Bag | Checkout | Profile |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| ![screenshot](documentation/wireframes/tablet-home.png) | ![screenshot](documentation/wireframes/tablet-contact.png) | ![screenshot](documentation/wireframes/tablet-contest.png) | ![screenshot](documentation/wireframes/tablet-products.png) | ![screenshot](documentation/wireframes/tablet-product.png) | ![screenshot](documentation/wireframes/tablet-bag.png) | ![screenshot](documentation/wireframes/tablet-checkout.png) | ![screenshot](documentation/wireframes/tablet-profile.png) |
+
+### Desktop Wireframes
+
+| Home | Contact | Contest | All Colas | Product Page | Bag | Checkout | Profile |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| ![screenshot](documentation/wireframes/desktop-home.png) | ![screenshot](documentation/wireframes/desktop-contact.png) | ![screenshot](documentation/wireframes/desktop-contest.png) | ![screenshot](documentation/wireframes/desktop-allproducts.png) | ![screenshot](documentation/wireframes/desktop-product.png) | ![screenshot](documentation/wireframes/desktop-bag.png) | ![screenshot](documentation/wireframes/desktop-checkout.png) | ![screenshot](documentation/wireframes/desktop-profile.png) |
+
