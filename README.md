@@ -73,3 +73,22 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | ![screenshot](documentation/wireframes/desktop-home.png) | ![screenshot](documentation/wireframes/desktop-contact.png) | ![screenshot](documentation/wireframes/desktop-contest.png) | ![screenshot](documentation/wireframes/desktop-allproducts.png) | ![screenshot](documentation/wireframes/desktop-product.png) | ![screenshot](documentation/wireframes/desktop-bag.png) | ![screenshot](documentation/wireframes/desktop-checkout.png) | ![screenshot](documentation/wireframes/desktop-profile.png) |
 
+## Features
+
+### Existing Features
+
+| Feature-Name | Feature-Image | Feature-Description |
+| --- | --- | --- |
+| Feature #1: The Navbar | ![screenshot](documentation/features/feature-01-navbar.png) | The navbar is there to make it easy for the user to navigate through the site and access it at any time. |
+| Feature #2: The Homepage | ![screenshot](documentation/features/feature-02-home.png) | The homepage is there to provide the user with general information about the brand, for example about the competition, the product, etc. |
+| Feature #3: Buttons | ![screenshot](documentation/features/feature-03-button.png) | The buttons on all pages increase the ease of user navigation and are coordinated with the respective section CTAs. |
+| Feature #4: Product-Section | ![screenshot](documentation/features/feature-04-productinfo.png) | The product section on the homepage is there to give the user general information about the product with a call to action button that acts as a link to the products page. |
+| Feature #5: The Newsletter Form | ![screenshot](documentation/features/feature-05-newsletter.png) | With the newsletter form, customers can subscribe to the newsletter and never miss out on offers, information and other things again. |
+| Feature #6: The Socials Section | ![screenshot](documentation/features/feature-06-socials.png) | In the socials section, users will find links to the brand's social media channels. The icons serve as visually appealing links. |
+| Feature #7: All Products Page | ![screenshot](documentation/features/feature-07-allproducts.png) | On the all-products page, users can find all the brand's products and go to the relevant product page. |
+| Feature #8: The Contest-Page | ![screenshot](documentation/features/feature-09-contest.png) | Users can register for the contest via a form on the contest page. |
+| Feature #9: The Contact-Page | ![screenshot](documentation/features/feature-10-contact.png) | Via the contact page, users can simply submit their questions to the brand using the form placed there and thus receive simple support. |
+| Feature #10: Userprofile | ![screenshot](documentation/features/feature-11-profile.png) | If the user decides to create a user profile, he can easily edit his order details there, which he can use for future orders and view his order history. |
+| Feature #11: The Shopping Bag | ![screenshot](documentation/features/feature-12-bag.png) | On the Shopping Bag page, the user can view his current total at any time, which products he has selected and adjust the products, etc. When the bag is empty, the user will see a button that acts as a link and takes the user back to the all products page. |
+
+### Future Features
