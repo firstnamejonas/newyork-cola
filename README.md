@@ -11,3 +11,18 @@ New York Cola is the soft drink for New York locals, fans of the city and touris
 ![screenshot](documentation/mockup-newyork-cola-website.png)
 
 source: [amiresponsive](https://ui.dev/amiresponsive?url=https://newyork-cola-c035d6287dfe.herokuapp.com)
+
+## UX
+
+### Colour Scheme
+
+- `#ff0000` used for section backgrounds, buttons and headings texts.
+- `#ffffff` used for section backgrounds and text on `#ff0000` backgrounds.
+- `#212529` used for text color on `#ffffff` backgrounds.
+
+### Typography
+
+- I used 'Rubik'-Font from [GoogleFonts](https://fonts.google.com/) for headings and the brands logo.
+- I used the 'Bootstrap Native Font Stack' for optimum text rendering on every device and OS. [Read more here!](https://getbootstrap.com/docs/5.3/content/reboot/#native-font-stack)
+- [Bootstrap Icons](https://icons.getbootstrap.com/) icons were used throughout the site, such as the social media icons in the footer.
+
