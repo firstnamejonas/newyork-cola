@@ -187,4 +187,27 @@ Social media can potentially build a community of users around the business, and
 
 A newsletter list can be used by the business to send regular messages to site users. For example, what items are on special offer, new items in stock, updates to business hours, notifications of events, and much more!
 
+## Search Engine Optimization (SEO) & Social Media Marketing
+
+### Keywords
+
+I've identified some appropriate keywords to align with my site, that should help users
+when searching online to find my page easily from a search engine.
+This included a series of the following keyword types
+
+| Keyword Length | Topic: New York Souvenirs | Topic: New York Gifts | Topic: New York | Topic: Cola |
+| --- | --- | --- | --- | --- |
+| Short-Tail Keywords | - | - | - | - |
+|  | New York Souvenir | New York Gifts | New York | Cola |
+|  | NYC Souvenir | NYC Presents | NYC | Coca Cola |
+|  | NYC Memories | Gift Shop New York | New York Life | Softdrink |
+|  | New York Sights | NYC Gifts | NYC Locals | Caffeine Drink |
+| Long-Tail Keywords | - | - | - | - |
+|  | Unique New York City Souvenirs | High-Quality New York City Gifts | Explore New York City Attractions | Classic Cola Flavors |
+|  | Best NYC Souvenirs to Buy | Exclusive NYC Gift Ideas | Discover Hidden Gems of NYC | Top-rated Softdrinks Brands |
+|  | New York Souvenir Shops | Unique New York City Souvenirs for Him/Her | Best Things to Do in NYC | Zero Sugar Softdrinks |
+|  | Best New York Souvenir | New York themed gifts | Sights in NYC | Top Cola Brands in the world |
+|  | Trendy New York City Souvenirs | Gifts from New York | Local Businesses New York City | Zero Sugar Cola |
+
+I also played around with [Word Tracker](https://www.wordtracker.com) a bit to check the frequency of some of my site's primary keywords (only until the free trial expired).
 
