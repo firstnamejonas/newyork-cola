@@ -92,3 +92,8 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 | Feature #11: The Shopping Bag | ![screenshot](documentation/features/feature-12-bag.png) | On the Shopping Bag page, the user can view his current total at any time, which products he has selected and adjust the products, etc. When the bag is empty, the user will see a button that acts as a link and takes the user back to the all products page. |
 
 ### Future Features
+
+| Future Feature Name | Description |
+| --- | --- |
+| Future Feature #1: Map | Implement a map on which you can see in which stores and where New York Cola is available. |
+
