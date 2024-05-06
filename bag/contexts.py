@@ -2,6 +2,7 @@ from decimal import Decimal
 from django.shortcuts import get_object_or_404
 from colas.models import Cola
 
+
 def bag_contents(request):
     """
     Context processor function.
