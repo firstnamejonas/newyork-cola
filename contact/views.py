@@ -20,7 +20,7 @@ def contact_page(request):
             form.save()
             messages.success(
                 request,
-                """Your Message has been send successfully! 
+                """Your Message has been send successfully!
                 We will answer you a quickly as possible!"""
             )
             return redirect('contact_page')
