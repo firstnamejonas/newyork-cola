@@ -96,6 +96,7 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 | Future Feature Name | Description |
 | --- | --- |
 | Future Feature #1: Map | Implement a map on which you can see in which stores and where New York Cola is available. |
+| Future Feature #2: Blog | Implement a blog about brand-related topics such as new york, travel to new york and more on the website so that there is good content for SEO. |
 
 ## Tools & Technologies Used
 
