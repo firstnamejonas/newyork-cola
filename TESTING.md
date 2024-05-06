@@ -37,3 +37,52 @@ I have used the recommended [JShint Validator](https://jshint.com) to validate a
 | --- | --- | --- |
 | stripe_elements.js | ![screenshot](documentation/validation/js-validation-stripe.png) | Undefined Stripe variable |
 
+### Python
+
+I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com) to validate all of my Python files.
+
+| App | File | CI URL | Screenshot | Notes |
+| --- | --- | --- | --- | --- |
+| Bag | --- | --- | --- | --- |
+| --- | contexts.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/firstnamejonas/newyork-cola/main/bag/contexts.py) | ![screenshot](documentation/validation/py-validation-bag-contexts.png) | No errors or warnings. |
+| --- | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/firstnamejonas/newyork-cola/main/bag/urls.py) | ![screenshot](documentation/validation/py-validation-bag-urls.png) | No errors or warnings. |
+| --- | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/firstnamejonas/newyork-cola/main/bag/views.py) | ![screenshot](documentation/validation/py-validation-bag-views.png) | No errors or warnings. |
+| Checkout | --- | --- | --- | --- |
+| --- | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/firstnamejonas/newyork-cola/main/checkout/admin.py) | ![screenshot](documentation/validation/py-validation-checkout-admin.png) | No errors or warnings. |
+| --- | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/firstnamejonas/newyork-cola/main/checkout/forms.py) | ![screenshot](documentation/validation/py-validation-checkout-forms.png) | No errors or warnings. |
+| --- | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/firstnamejonas/newyork-cola/main/checkout/models.py) | ![screenshot](documentation/validation/py-validation-checkout-models.png) | No errors or warnings. |
+| --- | signals.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/firstnamejonas/newyork-cola/main/checkout/signals.py) | ![screenshot](documentation/validation/py-validation-checkout-signals.png) | No errors or warnings. |
+| --- | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/firstnamejonas/newyork-cola/main/checkout/urls.py) | ![screenshot](documentation/validation/py-validation-checkout-urls.png) | No errors or warnings. |
+| --- | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/firstnamejonas/newyork-cola/main/checkout/views.py) | ![screenshot](documentation/validation/py-validation-checkout-views.png) | No errors or warnings. |
+| Colas | --- | --- | --- | --- |
+| --- | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/firstnamejonas/newyork-cola/main/colas/admin.py) | ![screenshot](documentation/validation/py-validation-colas-admin.png) | No errors or warnings. |
+| --- | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/firstnamejonas/newyork-cola/main/colas/models.py) | ![screenshot](documentation/validation/py-validation-colas-models.png) | No errors or warnings. |
+| --- | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/firstnamejonas/newyork-cola/main/colas/urls.py) | ![screenshot](documentation/validation/py-validation-colas-urls.png) | No errors or warnings. |
+| --- | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/firstnamejonas/newyork-cola/main/colas/views.py) | ![screenshot](documentation/validation/py-validation-colas-views.png) | No errors or warnings. |
+| Contact | --- | --- | --- | --- |
+| --- | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/firstnamejonas/newyork-cola/main/contact/admin.py) | ![screenshot](documentation/validation/py-validation-contact-admin.png) | No errors or warnings. |
+| --- | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/firstnamejonas/newyork-cola/main/contact/forms.py) | ![screenshot](documentation/validation/py-validation-contact-forms.png) | No errors or warnings. |
+| --- | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/firstnamejonas/newyork-cola/main/contact/models.py) | ![screenshot](documentation/validation/py-validation-contact-models.png) | No errors or warnings. |
+| --- | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/firstnamejonas/newyork-cola/main/contact/urls.py) | ![screenshot](documentation/validation/py-validation-contact-urls.png) | No errors or warnings. |
+| --- | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/firstnamejonas/newyork-cola/main/contact/views.py) | ![screenshot](documentation/validation/py-validation-contact-views.png) | No errors or warnings. |
+| Home | --- | --- | --- | --- |
+| --- | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/firstnamejonas/newyork-cola/main/home/admin.py) | ![screenshot](documentation/validation/py-validation-home-admin.png) | No errors or warnings. |
+| --- | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/firstnamejonas/newyork-cola/main/home/forms.py) | ![screenshot](documentation/validation/py-validation-home-forms.png) | No errors or warnings. |
+| --- | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/firstnamejonas/newyork-cola/main/home/models.py) | ![screenshot](documentation/validation/py-validation-home-models.png) | No errors or warnings. |
+| --- | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/firstnamejonas/newyork-cola/main/home/urls.py) | ![screenshot](documentation/validation/py-validation-home-urls.png) | No errors or warnings. |
+| --- | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/firstnamejonas/newyork-cola/main/home/views.py) | ![screenshot](documentation/validation/py-validation-home-views.png) | No errors or warnings. |
+| Promo | --- | --- | --- | --- |
+| --- | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/firstnamejonas/newyork-cola/main/promo/admin.py) | ![screenshot](documentation/validation/py-validation-promo-admin.png) | No errors or warnings. |
+| --- | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/firstnamejonas/newyork-cola/main/promo/forms.py) | ![screenshot](documentation/validation/py-validation-promo-forms.png) | No errors or warnings. |
+| --- | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/firstnamejonas/newyork-cola/main/promo/models.py) | ![screenshot](documentation/validation/py-validation-promo-models.png) | No errors or warnings. |
+| --- | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/firstnamejonas/newyork-cola/main/promo/urls.py) | ![screenshot](documentation/validation/py-validation-promo-urls.png) | No errors or warnings. |
+| --- | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/firstnamejonas/newyork-cola/main/promo/views.py) | ![screenshot](documentation/validation/py-validation-promo-views.png) | No errors or warnings. |
+| Userprofiles | --- | --- | --- | --- |
+| --- | admin.py | --- | --- | No code to be validated. |
+| --- | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/firstnamejonas/newyork-cola/main/userprofiles/forms.py) | ![screenshot](documentation/validation/py-validation-userprofiles-forms.png) | No errors or warnings. |
+| --- | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/firstnamejonas/newyork-cola/main/userprofiles/models.py) | ![screenshot](documentation/validation/py-validation-userprofiles-models.png) | No errors or warnings. |
+| --- | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/firstnamejonas/newyork-cola/main/userprofiles/urls.py) | ![screenshot](documentation/validation/py-validation-userprofiles-urls.png) | No errors or warnings. |
+| --- | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/firstnamejonas/newyork-cola/main/userprofiles/views.py) | ![screenshot](documentation/validation/py-validation-userprofiles-views.png) | No errors or warnings. |
+| Main | --- | --- | --- | --- |
+| --- | settings.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/firstnamejonas/newyork-cola/main/main/settings.py) | ![screenshot](documentation/validation/py-validation-main-settings.png) | No errors or warnings. |
+| --- | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/firstnamejonas/newyork-cola/main/main/urls.py) | ![screenshot](documentation/validation/py-validation-main-urls.png) | No errors or warnings. |
