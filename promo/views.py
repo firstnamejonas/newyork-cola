@@ -15,14 +15,22 @@ def contest_page(request):
         if form.is_valid():
             username = form.cleaned_data['contest_username']
             ordernumber = form.cleaned_data['contest_ordernumber']
-            # Check whether the user name and order number exist in the database.
-            if Order.objects.filter(user_profile__user__username=username, order_number=ordernumber).exists():
+            # Check whether the user name and order number exist in database.
+            if Order.objects.filter(
+                user_profile__user__username=username,
+                order_number=ordernumber
+            ).exists():
                 # Check if the order number is already in the contest database.
-                if Contest.objects.filter(contest_ordernumber=ordernumber).exists():
-                    messages.error(request, "Oops! You've already entered the contest with this order number!")
+                if Contest.objects.filter(
+                    contest_ordernumber=ordernumber
+                ).exists():
+                    messages.error(
+                        request,
+                        "Oops! You've already entered the contest with this order number!"  # noqa
+                    )
                 else:
                     form.save()
-                    messages.success(request, 'Your entry has been submitted successfully!')
+                    messages.success(request, 'Your entry has been submitted successfully!')  # noqa
                     return redirect('contest_page')
             else:
                 messages.error(request, 'Invalid username or order number.')
