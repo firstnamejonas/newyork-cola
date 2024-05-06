@@ -4,6 +4,7 @@ from .models import UserProfile
 from .forms import UserProfileForm
 from checkout.models import Order, OrderLineItem
 
+
 def profile(request):
     """
     View to display userprofile template.
