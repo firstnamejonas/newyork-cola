@@ -252,3 +252,8 @@ I've created a mockup Facebook & Instagram business account using [Canva](https:
 I have incorporate a newsletter sign-up form on my application, to allow users to supply their
 email address if they are interested in learning more. 
 
+## Testing
+
+> [!NOTE]
+> For all testing, please refer to the [TESTING.md](TESTING.md) file.
+
