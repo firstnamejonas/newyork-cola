@@ -8,4 +8,5 @@ class NewsletterAdmin(admin.ModelAdmin):
         'newsletter_first_name',
     )
 
+
 admin.site.register(NewsletterSignup, NewsletterAdmin)

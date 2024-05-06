@@ -3,6 +3,7 @@ from django.contrib import messages
 from .forms import NewsletterForm
 from .models import NewsletterSignup
 
+
 def index(request):
     """
     View to return the index page + handle form functionality.
