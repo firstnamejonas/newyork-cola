@@ -31,7 +31,13 @@
                             <label class="mt-3" for="quantity"><strong>Quantity:</strong></label>
                             <div class="form-group w-50">
                                 <div class="input-group">
+                                    <button class="btn btn-outline-secondary qty-decrement" type="button">
+                                        -
+                                    </button>
                                     <input class="form-control qty_input" type="number" name="quantity" id="quantity" value="1" min="1" max="99">
+                                    <button class="btn btn-outline-secondary qty-increment" type="button">
+                                        +
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -84,6 +90,38 @@
             $(this).val($(this).attr("min"));
         } else {
             $(this).val(inputVal);
+        }
+    });
+
+    // Increment quantity
+    $('.qty-increment').click(function(e) {
+        e.preventDefault(); // Prevent the default button behavior
+        
+        // Get the input element associated with the increment button
+        var inputField = $(this).closest('.input-group').find('.qty_input');
+        
+        // Get the current value of the input field
+        var currentValue = parseInt(inputField.val().trim());
+        
+        // Increment the value if it's within the range
+        if(!isNaN(currentValue) && currentValue < 99) {
+            inputField.val(currentValue + 1);
+        }
+    });
+
+    // Decrement quantity
+    $('.qty-decrement').click(function(e) {
+        e.preventDefault(); // Prevent the default button behavior
+        
+        // Get the input element associated with the decrement button
+        var inputField = $(this).closest('.input-group').find('.qty_input');
+        
+        // Get the current value of the input field
+        var currentValue = parseInt(inputField.val().trim());
+        
+        // Decrement the value if it's within the range
+        if(!isNaN(currentValue) && currentValue > 1) {
+            inputField.val(currentValue - 1);
         }
     });
 </script>
