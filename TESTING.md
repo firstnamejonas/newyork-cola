@@ -209,3 +209,35 @@ Defensive programming was manually tested with the below user acceptance testing
 | As a registered site user, I can view my latest purchases so that I can keep track of what I've purchased. | ![screenshot](documentation/features/feature-11-profile.png) |
 | As a returning site user, I can contact the company so that I can ask questions on my orders, get help, etc. | ![screenshot](documentation/features/feature-10-contact.png) |
 
+## Automated Testing
+
+I have conducted a series of automated tests on my application.
+
+I fully acknowledge and understand that, in a real-world scenario, an extensive set of additional tests would be more comprehensive.
+
+### Python (Unit Testing)
+
+I have used Django's built-in unit testing framework to test the application functionality.
+
+In order to run the tests, I ran the following command in the terminal each time:
+
+`python3 manage.py test name-of-app `
+
+To create the coverage report, I would then run the following commands:
+
+`coverage run --source=name-of-app manage.py test`
+
+`coverage report`
+
+Below are the results from the various apps on my application that I've tested:
+
+| App | Coverage | Screenshot |
+| --- | --- | --- |
+| Bag | 99% | ![screenshot](documentation/tests/py-test-bag.png) |
+| Checkout | 99% | ![screenshot](documentation/tests/py-test-checkout.png) |
+| Home | 99% | ![screenshot](documentation/tests/py-test-home.png) |
+| Colas | 99% | ![screenshot](documentation/tests/py-test-colas.png) |
+| Contact | 99% | ![screenshot](documentation/tests/py-test-contact.png) |
+| Promo | 89% | ![screenshot](documentation/tests/py-test-promo.png) |
+| Userprofiles | 100% | ![screenshot](documentation/tests/py-test-userprofiles.png) |
+
