@@ -83,10 +83,10 @@
 
 {% block postloadjs %}
 <script>
-    // force qty_input to only be 0-99
-    $(".qty_input").keyup(function() {
-        let inputVal = $(this).val();
-        if (inputVal < 0 || inputVal > 99 || inputVal.length > 2) {
+    // Force qty_input to only be 0-99
+    $(".qty_input").on('input', function() {
+        let inputVal = parseInt($(this).val());
+        if (isNaN(inputVal) || inputVal < 0 || inputVal > 99) {
             $(this).val($(this).attr("min"));
         } else {
             $(this).val(inputVal);
