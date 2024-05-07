@@ -27,7 +27,7 @@
                     <br>
                     <i class="bi bi-cash"></i> <strong>500$</strong> extra for you to spend
                 </p>
-                <a class="btn btn-danger custom-button-white-font mt-3" href="#" role="button">Enter here!</a>
+                <a class="btn btn-danger custom-button-white-font mt-3" href="#contest-form-section" role="button">Enter here!</a>
             </div>
         </div>
     </div>
@@ -42,13 +42,13 @@
                 <p><i class="bi bi-exclamation-circle-fill"></i> Please be aware of the following:</p>
                 <p class="text-muted">
                     <i class="bi bi-check-circle-fill"></i>
-                    You must have a valid user account, if you don't have one yet, <a href="">sign up here</a>!
+                    You must have a valid user account, if you don't have one yet, <a href="{% url 'account_signup' %}">sign up here</a>!
                 </p>
                 <p class="text-muted w-75 m-auto">
                     <i class="bi bi-check-circle-fill"></i>
                     You must have a valid order number, you can find in your order history,
-                    <a href="">on your profile page</a>! If you haven't ordered something yet,
-                    just take a look around on our <a href="">product page here</a>!
+                    <a href="{% url 'profile' %}" aria-label="Go to your profile page">on your profile page</a>! If you haven't ordered something yet,
+                    just take a look around on our <a href="{% url 'colas' %}" aria-label="Go to all products page">product page here</a>!
                 </p>
             </div>
             <div class="col-12">
