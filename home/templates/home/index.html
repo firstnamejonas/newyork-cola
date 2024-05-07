@@ -10,7 +10,9 @@
         <div class="row">
             <div class="col text-center">
                 <h1 class="hero-section-heading">TASTE THE CITY</h1>
-                <a class="btn btn-danger custom-button-white-font mt-3" href="#about-section" role="button">Find out more!</a>
+                <a class="btn btn-danger custom-button-white-font mt-3" href="#about-section" role="button" aria-label="Find out more about New York">
+                    Find out more!
+                </a>
             </div>
         </div>
     </div>
@@ -34,7 +36,7 @@
                 <img class="can-image" src="{% static 'images/newyorkcola-can.png' %}" alt="Image of the New York Cola Can">
             </div>
             <div class="col-12 text-center">
-                <a class="btn btn-danger custom-button-black-font mt-2" href="{% url 'colas' %}" role="button">Buy Now!</a>
+                <a class="btn btn-danger custom-button-black-font mt-2" href="{% url 'colas' %}" role="button" aria-label="Go to Products Page to buy New York Cola">Buy Now!</a>
             </div>
         </div>
     </div>
@@ -72,14 +74,14 @@
                     <br>
                     <i class="bi bi-emoji-smile"></i> THAT'S IT!
                 </p>
-                <a class="btn btn-light mb-2" href="{% url 'contest_page' %}">Enter now!</a>
+                <a class="btn btn-light mb-2" href="{% url 'contest_page' %}" aria-label="Click to go to Contest Page">Enter now!</a>
                 <br>
                 <small class="red-bg-heading">
                     Benefit: While you're waiting if you've won, you can lay back, relax and enjoy a fresh New York Cola!
                 </small>
             </div>
             <div class="col text-center mb-5">
-                <img class="contest-image" src="{% static 'images/hero-image-newyork.jpg' %}" alt="">
+                <img class="contest-image" src="{% static 'images/hero-image-newyork.jpg' %}" alt="Image of the New York Skyline">
             </div>
         </div>
     </div>
@@ -120,7 +122,7 @@
                 </div>
             </div>
             <div class="col-12 text-center">
-                <a class="btn btn-danger custom-button-black-font mt-5" href="{% url 'colas' %}" role="button">Buy Now!</a>
+                <a class="btn btn-danger custom-button-black-font mt-5" href="{% url 'colas' %}" role="button" aria-label="Go to Products Page to buy New York Cola">Buy Now!</a>
             </div>
         </div>
     </div>
