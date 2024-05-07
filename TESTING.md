@@ -241,3 +241,15 @@ Below are the results from the various apps on my application that I've tested:
 | Promo | 89% | ![screenshot](documentation/tests/py-test-promo.png) |
 | Userprofiles | 100% | ![screenshot](documentation/tests/py-test-userprofiles.png) |
 
+## Bugs
+
+| Bug | Screenshots | Solution | Screenshot |
+| --- | --- | --- | --- |
+| If user deleted the value in the quantity input field on the product page, the user received a Server Error 500. | ![screenshot](documentation/bugs/bug-03.png) | To fix this, I added the JavaScript Code you can see in the image on the side. With that I've forced the input to have a value and not trigger the Server Error 500. | ![screenshot](documentation/bugs/bug-03-solution.png) |
+| Django Messages being displayed in the admin panel instead of the User Frontend | ![screenshot](documentation/bugs/bug-01.png) | To fix this, I added an if- and for-loop to the base template with some styling classes and html content. Now the messages are displayed on the top of the page directly under the navbar. | ![screenshot](documentation/bugs/bug-01-solution.png) |
+| Ordered Items and Amount are not being displayed on Checkout Success Page and in the Admin Panel. | ![screenshot](documentation/bugs/bug-02.png) | To fix this, I added an order_line_item variable to the checkout view.  | ![screenshot](documentation/bugs/bug-02-solution.png) |
+
+## Unfixed Bugs
+
+> [!NOTE]  
+> There are no remaining bugs that I am aware of.
