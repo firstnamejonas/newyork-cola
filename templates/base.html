@@ -46,7 +46,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark header-color fixed-top">
         <div class="container">
             <!--Logo:-->
-            <a class="navbar-brand logo-anchor m-0" href="{% url 'home' %}">NEW YORK COLA</a>
+            <a class="navbar-brand logo-anchor m-0" href="{% url 'home' %}" aria-label="Go to Home Page">NEW YORK COLA</a>
             <!--Toogle:-->
             <button 
             class="navbar-toggler shadow-none border-0 toggle-icon"
@@ -67,42 +67,42 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                        <a class="nav-link active" href="{% url 'home' %}">Home</a>
+                        <a class="nav-link active" href="{% url 'home' %}" aria-label="Go to Home Page">Home</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link active" href="{% url 'colas' %}">Products</a>
+                        <a class="nav-link active" href="{% url 'colas' %}" aria-label="Go to Products Page">Products</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="{% url 'contest_page' %}">Win Free New York Trip!</a>
+                            <a class="nav-link active" href="{% url 'contest_page' %}" aria-label="Go to Contest Page">Win Free New York Trip!</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="{% url 'contact_page' %}">Contact</a>
+                            <a class="nav-link active" href="{% url 'contact_page' %}" aria-label="Go to Contact Page">Contact</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Open User Menu">
                                 <i class="bi bi-person-circle" data-bs-toggle="dropdown" aria-expanded="false" role="list"></i>
                                 User
                             </a>
                             <ul class="dropdown-menu mb-2">
                                 {% if request.user.is_authenticated %}
-                                    <li><a href="{% url 'profile' %}" class="dropdown-item">My Profile</a></li>
-                                    <li><a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a></li>
+                                    <li><a href="{% url 'profile' %}" class="dropdown-item" aria-label="Go to Your Profile Page">My Profile</a></li>
+                                    <li><a href="{% url 'account_logout' %}" class="dropdown-item" aria-label="Go to Logout Page">Logout</a></li>
                                 {% else %}
-                                    <li><a href="{% url 'account_signup' %}" class="dropdown-item">Register</a></li>
-                                    <li><a href="{% url 'account_login' %}" class="dropdown-item">Login</a></li>
+                                    <li><a href="{% url 'account_signup' %}" class="dropdown-item" aria-label="Go to Registration Page">Register</a></li>
+                                    <li><a href="{% url 'account_login' %}" class="dropdown-item" aria-label="Go to Login Page">Login</a></li>
                                 {% endif %}
                             </ul>
                         </li>
                     </ul>
                     <div class="d-grid gap-2">
-                        <a href="{% url 'colas' %}" class="btn btn-light">Buy Now!</a>
+                        <a href="{% url 'colas' %}" class="btn btn-light" aria-label="Go to Products Page">Buy Now!</a>
                     </div>
                 </div>
             </div>
             <!--Shopphing Cart Link-->
             <div class="icon-header-div ms-3">
                 <!--Cart Link / Icon-->
-                <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-white{% endif %} nav-link" href="{% url 'view_bag' %}">
+                <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-white{% endif %} nav-link" href="{% url 'view_bag' %}" aria-label="Go to Shopping Bag Page">
                     <div class="text-center">
                         <i class="bi bi-bag-fill"></i>
                         <p class="my-0 bag-total">
@@ -144,8 +144,8 @@
                 <div class="col-6 text-end">
                     <p>
                         Links: 
-                        <a href="https://github.com/firstnamejonas" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a> | 
-                        <a href="https://www.linkedin.com/in/jonas-hessling-1a123a29b/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/firstnamejonas" target="_blank" rel="noopener noreferrer" aria-label="Go to Github Page in a new Tab"><i class="bi bi-github"></i></a> | 
+                        <a href="https://www.linkedin.com/in/jonas-hessling-1a123a29b/" target="_blank" rel="noopener noreferrer" aria-label="Go to LinkedIn Page in a new Tab"><i class="bi bi-linkedin"></i></a>
                     </p>
                 </div>
             </div>
