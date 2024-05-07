@@ -130,3 +130,64 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 | Login | ![screenshot](documentation/lighthouse/lighthouse-login-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-login-desktop.png) | Some minor warnings on best practice due to stripe and cloudinary. |
 | Profile | ![screenshot](documentation/lighthouse/lighthouse-profile-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-profile-desktop.png) | Some minor warnings on best practice due to stripe and cloudinary. Accessibility warnings due to the select element on the form. |
 
+## Defensive Programming
+
+Defensive programming was manually tested with the below user acceptance testing:
+
+| Page | User Action | Expected Result | Pass/Fail |
+| --- | --- | --- | --- |
+| All Pages (Navbar) | --- | --- | --- |
+|  | User clicks on Logo | User gets redirected to the Home page. | Pass |
+|  | User clicks on Home Link | User gets redirected to the Home page. | Pass |
+|  | User clicks on Products Link | User gets redirected to the Products page. | Pass |
+|  | User clicks on Contest Link | User gets redirected to the Contest page. | Pass |
+|  | User clicks on Contact Link | User gets redirected to the Contact page. | Pass |
+|  | User clicks on User Dropdown Menu | Dropdown opens up. If user is logged in, the menu displays links to the userprofile page or the logout page. If user in not logged in, the menu displays links to the signup or login page. If user clicks on the links he's redirected to the page accordingly. | Pass |
+|  | User clicks on 'Buy Now' Link | User gets redirected to the Products page. | Pass |
+|  | User clicks on Shopping Bag Link | User gets redirected to the Shopping Bag page. | Pass |
+|  | User adds item to the Shopping Bag | Amount of the shopping bag updates accordingly. | Pass |
+| All Pages (Messages) | --- | --- | --- |
+|  | User triggers special messages events | User receives messages on the top of the page. | Pass |
+| All Pages (Footer) | --- | --- | --- |
+|  | User clicks on 'Github Icon' Link | User gets redirected to Github in a new tab. | Pass |
+|  | User clicks on 'LinkedIn Icon' Link | User gets redirected to LinkedIn in a new tab. | Pass |
+| Multiple Pages (Socials Section) | --- | --- | --- |
+|  | User clicks on 'Instagram Icon' Link | User gets redirected to Instagram in a new tab. | Pass |
+|  | User clicks on 'TikTok Icon' Link | User gets redirected to TikTok in a new tab. | Pass |
+|  | User clicks on 'Twitter / X Icon' Link | User gets redirected to Twitter / X in a new tab. | Pass |
+|  | User clicks on 'YouTube Icon' Link | User gets redirected to YouTube in a new tab. | Pass |
+| Home | --- | --- | --- |
+|  | User clicks on 'Find out more' Link | User's navigated to the about section to the Home page. | Pass |
+|  | User clicks on 'Buy Now!' Links | User gets redirected to the Products page. | Pass |
+|  | User clicks on 'Enter Now' Links | User gets redirected to the Contest page. | Pass |
+|  | User clicks on 'Buy Now!' Links | User gets redirected to the Products page. | Pass |
+|  | User tries to submit empty Newsletter form | Form can't be submitted, Error Message | Pass |
+|  | User submits completed Newsletter form | User receives success message at the top of the Home page. | Pass |
+| Products | --- | --- | --- |
+|  | User clicks on 'Buy Now!' Links | User gets redirected to the according Product page. | Pass |
+| Product | --- | --- | --- |
+|  | User adjusts quantity of packages via quantity form field | Quantity of packages will be added to the shopping bag accordingly by clicking 'Add to bag' button. | Pass |
+|  | User adjusts quantity of packages via quantity form field | Quantity of packages will be added to the shopping bag accordingly by clicking 'Add to bag' button. | Pass |
+|  | User submits empty form field or 0. | User receives Server Error or Error Message. | Pass |
+| Bag | --- | --- | --- |
+|  | User clicks on 'Secure Checkout' Link | User gets redirected to the Checkout page. | Pass |
+|  | User clicks on 'Keep Shopping' Link | User gets redirected to the Products page. | Pass |
+|  | User adjusts quantity of packages via quantity form field and clicks on 'Update' | Bag total and all other neccessary information adjust accordingly. | Pass |
+|  | User clicks on 'Remove' | Item is removed from the shopping bag. | Pass |
+| Checkout | --- | --- | --- |
+|  | User tries to submit checkout form without required information. | User receives error message and is informed which field to fill out. | Pass |
+|  | User clicks on 'Adjust Bag' Link | User gets redirected to the Shopping Bag page. | Pass |
+|  | User submits form via 'Complete Order' Button | User is redirected to the Checkout Success page. | Pass |
+| Checkout Success | --- | --- | --- |
+|  | User clicks on 'Win Free NYC Trip' Link | User gets redirected to the Contest page. | Pass |
+| Profile | --- | --- | --- |
+|  | User updates information via form. | New information displays in form after submitting. | Pass |
+|  | User clicks on order number links. | User is redirected to the 'checkout success' page and can go back to the profile by clicking on the 'Back to Profile' link. | Pass |
+| Allauth-Pages | --- | --- | --- |
+|  | User tries to submit empty forms. | User receives error message with information what field is required. | Pass |
+|  | User clicks on links such as 'sign up' (Login Page). | User gets redirected to the according page. | Pass |
+| Contact | --- | --- | --- |
+|  | User tries to submit empty forms. | User receives error message with information what field is required. | Pass |
+| Contest | --- | --- | --- |
+|  | User tries to submit empty forms. | User receives error message with information what field is required. | Pass |
+
