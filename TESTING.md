@@ -191,3 +191,21 @@ Defensive programming was manually tested with the below user acceptance testing
 | Contest | --- | --- | --- |
 |  | User tries to submit empty forms. | User receives error message with information what field is required. | Pass |
 
+## User Story Testing
+
+| User Story | Screenshot |
+| --- | --- |
+| As a (new) site user, I would like to have access to general information about new york cola, so that I can get to know all important information about the product. | ![screenshot](documentation/features/feature-02-home.png) |
+| As a (new) site user, I can easily find where to purchase The New York Cola products so that I can easily purchase the product without searching for a long time. | ![screenshot](documentation/features/feature-03-button.png) |
+| As a (new) site user, I can view all information about the product on the product page, as well as selecting the packages I want to order, and add them to the shopping card so that I can purchase it later. | ![screenshot](documentation/features/feature-13-product.png) |
+| As a (new) site user, I can view my shopping cart so that I can review my selected items before checkout. | ![screenshot](documentation/features/feature-12-bag.png) |
+| As a (new) site user, I can proceed to checkout so that I can complete my purchase. | ![screenshot](documentation/features/feature-12-bag.png) |
+| As a (new) site user, I can create an account so that I can save my information for future purchases. | ![screenshot](documentation/features/feature-11-profile.png) |
+| As a (new) site user, I can remove items from my shopping cart so that I can eliminate unwanted products. | ![screenshot](documentation/features/feature-12-bag.png) |
+| As a (new) site user, I can update the quantity of items in my shopping cart so that I can adjust my order as needed. | ![screenshot](documentation/features/feature-12-bag.png) |
+| As a (new) site user, I can signup to a newsletter in order to receive messages on promos and more. | ![screenshot](documentation/features/feature-05-newsletter.png) |
+| As a registered site user, I can log in to my account so that I can access my saved information. | ![screenshot](documentation/features/feature-11-profile.png) |
+| As a registered site user, I can view and update my account information so that I can update my information in case I have a new address, etc. | ![screenshot](documentation/features/feature-11-profile.png) |
+| As a registered site user, I can view my latest purchases so that I can keep track of what I've purchased. | ![screenshot](documentation/features/feature-11-profile.png) |
+| As a returning site user, I can contact the company so that I can ask questions on my orders, get help, etc. | ![screenshot](documentation/features/feature-10-contact.png) |
+
