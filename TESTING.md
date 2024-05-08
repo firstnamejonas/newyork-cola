@@ -37,6 +37,8 @@ I have used the recommended [JShint Validator](https://jshint.com) to validate a
 | File | Screenshot | Notes |
 | --- | --- | --- |
 | stripe_elements.js | ![screenshot](documentation/validation/js-validation-stripe.png) | Undefined Stripe variable |
+| bag.js | ![screenshot](documentation/validation/js-validation-bag.png) | Pass: No Warning or Errors |
+| colas.js | ![screenshot](documentation/validation/js-validation-colas.png) | Pass: No Warning or Errors |
 
 ### Python
 
