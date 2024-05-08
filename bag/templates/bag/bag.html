@@ -46,9 +46,9 @@
                                         <div class="form-group">
                                             <div class="input-group">
                                                 <input class="form-control form-control-sm qty_input w-100 rounded-2" type="number"
-                                                    name="quantity" value="{{ item.quantity }}" min="1" max="99"
-                                                    data-item_id="{{ item.item_id }}"
-                                                    id="id_qty_{{ item.item_id }}"
+                                                       name="quantity" value="{{ item.quantity }}" min="1" max="99"
+                                                       data-item_id="{{ item.item_id }}"
+                                                       id="id_qty_{{ item.item_id }}"
                                                 >
                                                 <button class="btn btn-outline-secondary qty-increment w-50 mt-1 rounded-start" type="button">
                                                     +
@@ -59,8 +59,8 @@
                                             </div>
                                         </div>
                                     </form>
-                                    <a class="update-link text-success" aria-label="Update your Shopping Bag"><small>Update</small></a>
-                                    <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" aria-label="Remove Item from your Shopping Bag"><small>Remove</small></a>
+                                    <a class="update-link btn custom-button-black-font btn-sm mt-2" aria-label="Update your Shopping Bag"><small>Update</small></a>
+                                    <a class="remove-item btn custom-button-black-font-transparent btn-sm mt-2 float-right" id="remove_{{ item.item_id }}" aria-label="Remove Item from your Shopping Bag"><small>Remove</small></a>
                                 </td>
                                 <td class="py-3 text-end">
                                     <p class="my-0">€{{ item.product.price | calc_subtotal:item.quantity }}</p>
