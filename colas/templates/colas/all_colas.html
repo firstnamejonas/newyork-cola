@@ -17,7 +17,7 @@
                 <div class="product-container">
                     <img class="product-image-size" src="{{ cola.product_image.url }}" alt="{{ cola.product_name }}">
                     <h5 class="white-bg-heading">{{ cola.product_name }}</h5>
-                    <p class="card-text">{{ cola.price }} € / per can</p>
+                    <p class="card-text">{{ cola.price }} €</p>
                     <a href="{% url 'product_page' cola.id %}" class="btn custom-button-black-font" aria-label="Go to Product Page">Buy Now!</a>
                 </div>
             </div>
