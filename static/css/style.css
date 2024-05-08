@@ -89,7 +89,7 @@ html {
 
 /*-------------------------------------------------------------------- About-Section: */
 
-#about-section {
+#about-section, #contest-form-section {
     scroll-margin-top: 4em;
 }
 
