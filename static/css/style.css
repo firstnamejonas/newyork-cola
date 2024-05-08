@@ -115,6 +115,18 @@ html {
     color: #0e0e0e;
 }
 
+.custom-button-black-font-transparent {
+    background-color: transparent;
+    border: 1px solid red;
+    color: #0e0e0e;
+}
+
+.custom-button-black-font-transparent:hover {
+    background: red;
+    border: 1px solid red;
+    color: white;
+}
+
 /*-------------------------------------------------------------------- Contest-Section: */
 
 #contest-section {
