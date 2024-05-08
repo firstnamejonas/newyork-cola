@@ -33,7 +33,7 @@ class ContactForm(forms.ModelForm):
             else:
                 placeholder = placeholders[field]
             self.fields[field].widget.attrs['placeholder'] = placeholder
-            self.fields[field].widget.attrs['class'] = 'mt-3 text-muted'
+            self.fields[field].widget.attrs['class'] = 'mt-3'
             self.fields[field].label = False
 
             # Assign custom classes for 'contact_issue' field
