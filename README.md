@@ -495,5 +495,6 @@ There were no differences found.
 
 ### Acknowledgements
 - I would like to thank my family & my partner Caro, for believing in me, and allowing me to make this transition into software development.
-- I would like to thank my Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN) for his support throughout the development of this project.
+- I would like to thank my Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN) for his support throughout the development of this project. He's the best mentor and actively helped me to believe in my skills and get through all the projects. Thank you Tim!
+- I would like to thank my 'exchange' Code Institute mentor Chris for quickly helping out and supporting me in the last stages of finishing up the project!
 - I would like to thank the [Code Institute Slack community](https://code-institute-room.slack.com) for the moral support; it kept me going during periods of self doubt and imposter syndrome.
