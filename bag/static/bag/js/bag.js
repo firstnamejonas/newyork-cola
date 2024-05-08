@@ -10,8 +10,8 @@ $('.update-link').click(function(e) {
     // Get the value of the input field
     var inputValue = inputField.val().trim();
     
-    // Check if the input value is empty, not a number, or out of range
-    if(inputValue === '' || !Number.isInteger(inputValue) || isNaN(inputValue) || inputValue < 1 || inputValue > 99) {
+    // Check if the input value is empty, not a number, out of range, or not an integer
+    if(inputValue === '' || isNaN(inputValue) || !Number.isInteger(Number(inputValue)) || inputValue < 1 || inputValue > 99) {
         // Set a default value or handle the error as per your requirement
         inputField.val('1');
     } else {
