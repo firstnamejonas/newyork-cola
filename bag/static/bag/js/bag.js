@@ -1,3 +1,5 @@
+/* jshint esversion: 11, jquery: true */
+
 // Update quantity on click
 $('.update-link').click(function(e) {
     e.preventDefault(); // Prevent the default form submission
@@ -30,7 +32,7 @@ $('.remove-item').click(function(e) {
         .done(function() {
             location.reload();
         });
-})
+});
 
 // Increment quantity
 $('.qty-increment').click(function(e) {

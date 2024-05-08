@@ -1,3 +1,5 @@
+/* jshint esversion: 11, jquery: true */
+
 // Force qty_input to only be 0-99
 $(".qty_input").on('input', function() {
     let inputVal = parseInt($(this).val());
