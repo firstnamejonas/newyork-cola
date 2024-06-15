@@ -35,7 +35,9 @@ def product_page(request, cola_id):
 
 
 def add_cola(request):
-    """ Add a cola to the store as a superuser """
+    """
+    Add a cola to the store as a superuser
+    """
 
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES)
@@ -55,6 +57,38 @@ def add_cola(request):
     template = 'colas/add_cola.html'
     context = {
         'form': form,
+    }
+
+    return render(request, template, context)
+
+
+def edit_cola(request, cola_id):
+    """
+    Edit a product in the store.
+    """
+    product = get_object_or_404(Cola, pk=cola_id)
+    if request.method == 'POST':
+        form = ProductForm(request.POST, request.FILES, instance=product)
+        if form.is_valid():
+            form.save()
+            messages.success(
+                request,
+                f'Successfully updated {product.product_name}!'
+            )
+            return redirect(reverse('product_page', args=[product.id]))
+        else:
+            messages.error(
+                request,
+                'Failed to update product. Please ensure the form is valid.'
+            )
+    else:
+        form = ProductForm(instance=product)
+        messages.info(request, f'You are now editing {product.product_name}!')
+
+    template = 'colas/edit_cola.html'
+    context = {
+        'form': form,
+        'product': product,
     }
 
     return render(request, template, context)
