@@ -89,7 +89,7 @@
                             <ul class="dropdown-menu mb-2">
                                 {% if request.user.is_authenticated %}
                                     {% if request.user.is_superuser %}
-                                        <a href="{% url 'add_cola' %}" class="dropdown-item">Admin Management</a>
+                                        <a href="{% url 'add_cola' %}" class="dropdown-item"><strong>Admin: </strong>Add Product</a>
                                     {% endif %}
                                     <li><a href="{% url 'profile' %}" class="dropdown-item" aria-label="Go to Your Profile Page">My Profile</a></li>
                                     <li><a href="{% url 'account_logout' %}" class="dropdown-item" aria-label="Go to Logout Page">Logout</a></li>
