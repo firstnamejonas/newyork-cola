@@ -1,5 +1,7 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, redirect, reverse, HttpResponse, get_object_or_404  # noqa
+from django.contrib import messages
 from .models import Cola
+from .forms import ProductForm
 
 
 def all_colas(request):
@@ -30,3 +32,29 @@ def product_page(request, cola_id):
     }
 
     return render(request, 'colas/product_page.html', context)
+
+
+def add_cola(request):
+    """ Add a cola to the store as a superuser """
+
+    if request.method == 'POST':
+        form = ProductForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully added a new cola!')
+            return redirect(reverse('add_cola'))
+        else:
+            messages.error(
+                request,
+                'Failed to add product. Please ensure the form is valid.'
+            )
+    else:
+        form = ProductForm()
+
+    form = ProductForm()
+    template = 'colas/add_cola.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
