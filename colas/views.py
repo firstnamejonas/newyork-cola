@@ -92,3 +92,13 @@ def edit_cola(request, cola_id):
     }
 
     return render(request, template, context)
+
+
+def delete_cola(request, cola_id):
+    """
+    Delete a product from the store as superuser.
+    """
+    product = get_object_or_404(Cola, pk=cola_id)
+    product.delete()
+    messages.success(request, 'Product deleted!')
+    return redirect(reverse('colas'))
