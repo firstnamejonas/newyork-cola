@@ -31,6 +31,7 @@ DEBUG = os.environ.get("DEBUG", False)
 
 ALLOWED_HOSTS = [
     '8000-firstnamejo-newyorkcola-ksbrda2186b.ws-eu111.gitpod.io',
+    '8000-firstnamejo-newyorkcola-ksbrda2186b.ws-eu114.gitpod.io',
     '.herokuapp.com'
 ]
 
