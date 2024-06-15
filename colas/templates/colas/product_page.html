@@ -45,7 +45,13 @@
                             <input type="submit" class="btn custom-button-black-font mt-3" value="Add to Bag">
                         </div>
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
-                </form>                
+                </form>
+                {% if request.user.is_superuser %}
+                    <hr>
+                    <p><strong>Admins Only:</strong></p>
+                    <a class="btn custom-button-black-font" href="{% url 'edit_cola' cola.id %}"><i class="bi bi-pencil-square"></i> Edit Product</a>
+                    <a class="btn custom-button-black-font" href="{% url 'delete_cola' cola.id %}"><i class="bi bi-exclamation-triangle-fill"></i> Delete Product</a>
+                {% endif %}
             </div>
         </div>
     </div>
