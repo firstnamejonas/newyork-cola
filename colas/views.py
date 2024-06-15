@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, reverse, HttpResponse, get_object_or_404  # noqa
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from .models import Cola
 from .forms import ProductForm
 
@@ -34,10 +35,14 @@ def product_page(request, cola_id):
     return render(request, 'colas/product_page.html', context)
 
 
+@login_required
 def add_cola(request):
     """
     Add a cola to the store as a superuser
     """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
 
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES)
@@ -62,10 +67,15 @@ def add_cola(request):
     return render(request, template, context)
 
 
+@login_required
 def edit_cola(request, cola_id):
     """
     Edit a product in the store.
     """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
     product = get_object_or_404(Cola, pk=cola_id)
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES, instance=product)
@@ -94,10 +104,15 @@ def edit_cola(request, cola_id):
     return render(request, template, context)
 
 
+@login_required
 def delete_cola(request, cola_id):
     """
     Delete a product from the store as superuser.
     """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
     product = get_object_or_404(Cola, pk=cola_id)
     product.delete()
     messages.success(request, 'Product deleted!')
