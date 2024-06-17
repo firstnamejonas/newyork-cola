@@ -13,15 +13,15 @@
             <div class="col-md-6 col-xs-12">
                 <h1 class="white-bg-heading">{{ cola.product_name }}</h1>
                 <p><strong>{{ cola.price }} €</strong></p>
-                <p>{{ cola.product_description }}</p>
+                <p>{{ cola.product_description|safe|linebreaksbr }}</p>
                 <details>
                     <summary>Ingredients</summary>
-                    <p>{{ cola.ingredients }}</p>
+                    <p>{{ cola.ingredients|safe|linebreaksbr }}</p>
                 </details>
                 <hr>
                 <details>
                     <summary>Nutrition Facts</summary>
-                    <p>{{ cola.nutrition_facts }}</p>
+                    <p>{{ cola.nutrition_facts|safe|linebreaksbr }}</p>
                 </details>
                 <hr>
                 <h2 class="white-bg-heading">Order here:</h2>
