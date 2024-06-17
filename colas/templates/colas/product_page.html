@@ -14,16 +14,20 @@
                 <h1 class="white-bg-heading">{{ cola.product_name }}</h1>
                 <p><strong>{{ cola.price }} €</strong></p>
                 <p>{{ cola.product_description|safe|linebreaksbr }}</p>
+                {% if cola.ingredients %}
                 <details>
                     <summary>Ingredients</summary>
                     <p>{{ cola.ingredients|safe|linebreaksbr }}</p>
                 </details>
                 <hr>
+                {% endif %}
+                {% if cola.nutrition_facts%}
                 <details>
                     <summary>Nutrition Facts</summary>
                     <p>{{ cola.nutrition_facts|safe|linebreaksbr }}</p>
                 </details>
                 <hr>
+                {% endif %}
                 <h2 class="white-bg-heading">Order here:</h2>
                 <form class="form" action="{% url 'add_items' cola.id %}" method="POST">
                     {% csrf_token %}
