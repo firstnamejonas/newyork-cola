@@ -95,6 +95,8 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 | Feature #10: Userprofile | ![screenshot](documentation/features/feature-11-profile.png) | If the user decides to create a user profile, he can easily edit his order details there, which he can use for future orders and view his order history. |
 | Feature #11: The Shopping Bag | ![screenshot](documentation/features/feature-12-bag.png) | On the Shopping Bag page, the user can view his current total at any time, which products he has selected and adjust the products, etc. When the bag is empty, the user will see a button that acts as a link and takes the user back to the all products page. |
 | Feature #12: Product Page | ![screenshot](documentation/features/feature-13-product.png) | On the product page, users can find all more information about the product and can add them to the shopping card. |
+| Feature #13: Admin Management | ![screenshot](documentation/browsers/browser-chrome-add-edit.png) ![screenshot](documentation/browsers/browser-chrome-delete.png) | The Admin of the page is able to Add, Update & Delete Products on the. |
+
 
 ### Future Features
 
