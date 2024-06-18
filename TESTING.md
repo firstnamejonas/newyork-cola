@@ -27,6 +27,8 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | templates | email.html | ![screenshot](documentation/validation/html-validation-email.png) | No errors or warnings to show. | [Click here](https://validator.w3.org/nu/?doc=https%3A%2F%2Fnewyork-cola-c035d6287dfe.herokuapp.com%2Faccounts%2Fconfirm-email%2F) |
 | templates | email_confirm.html | ![screenshot](documentation/validation/html-validation-email-confirm.png) | No errors or warnings to show. | [Click here](https://validator.w3.org/nu/?doc=https%3A%2F%2Fnewyork-cola-c035d6287dfe.herokuapp.com%2Faccounts%2Fconfirm-email%2FOA%3A1s4mYf%3AMMLVHTyCUMBndWdtkFpZmnJnM4w1vq5N8FNLQ8LJEWs%2F) |
 | templates | logout.html | ![screenshot](documentation/validation/html-validation-logout.png) | No errors or warnings to show. | [Click here](https://validator.w3.org/nu/?doc=https%3A%2F%2Fnewyork-cola-c035d6287dfe.herokuapp.com%2Faccounts%2Flogout%2F) |
+| templates | add_cola.html | ![screenshot](documentation/validation/html-validation-add.png) | No errors or warnings to show. | [Click here](https://validator.w3.org/nu/?doc=https%3A%2F%2Fnewyork-cola-c035d6287dfe.herokuapp.com%2Faccounts%2Flogin%2F%3Fnext%3D%2Fproducts%2Fadd%2F) |
+| templates | edit_cola.html | ![screenshot](documentation/validation/html-validation-edit.png) | No errors or warnings to show. | [Click here](https://validator.w3.org/nu/?doc=https%3A%2F%2Fnewyork-cola-c035d6287dfe.herokuapp.com%2Faccounts%2Flogin%2F%3Fnext%3D%2Fproducts%2Fedit%2F2%2F) |
 
 ### CSS
 
