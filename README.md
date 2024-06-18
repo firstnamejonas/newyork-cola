@@ -51,6 +51,9 @@ source: [amiresponsive](https://ui.dev/amiresponsive?url=https://newyork-cola-c0
 - As a registered site user, I can view my latest purchases so that I can keep track of what I've purchased.
 - As a returning site user, I can contact the company so that I can ask questions on my orders, get help, etc.
 
+### Admin
+- As an admin of the site, I can add, update and delete products so that I can manage the stores products easily on the frontend.
+
 ## Wireframes
 
 To follow best practice, wireframes were developed for mobile, tablet, and desktop sizes.
