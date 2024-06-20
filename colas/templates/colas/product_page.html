@@ -54,7 +54,29 @@
                     <hr>
                     <p><strong>Admins Only:</strong></p>
                     <a class="btn custom-button-black-font" href="{% url 'edit_cola' cola.id %}"><i class="bi bi-pencil-square"></i> Edit Product</a>
-                    <a class="btn custom-button-black-font" href="{% url 'delete_cola' cola.id %}"><i class="bi bi-exclamation-triangle-fill"></i> Delete Product</a>
+                    <button type="button" class="btn custom-button-black-font" data-bs-toggle="modal" data-bs-target="#modal-delete-{{ cola.id }}"><i class="bi bi-exclamation-triangle-fill"></i> Delete Product</button>
+
+
+                    <!-- Delete Cola Modal -->
+                    <div class="modal fade" id="modal-delete-{{ cola.id }}" tabindex="-1" aria-labelledby="modal-label-delete-{{ cola.id }}" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content product-container">
+                          <div class="modal-header">
+                            <h2 class="modal-title fs-5" id="modal-label-delete-{{ cola.id }}">{{ cola.product_name }}</h2>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            Are you sure you want to delete {{ cola.product_name }}?
+                            <br>
+                            <span class="text-muted">This action is permanent, and cannot be undone.</span>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><i class="bi bi-x-octagon"></i> Close</button>
+                            <a class="btn custom-button-black-font" href="{% url 'delete_cola' cola.id %}"><i class="bi bi-trash"></i> Delete</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                 {% endif %}
             </div>
         </div>
