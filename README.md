@@ -153,6 +153,81 @@ INSTALLED_APPS = [
 ![erd](documentation/erd.png)
 source: [medium.com](https://medium.com/@yathomasi1/1-using-django-extensions-to-visualize-the-database-diagram-in-django-application-c5fa7e710e16)
 
+I've also used [mermaid.live](https://mermaid.live/edit#pako:eNotijEOgCAQBL9CtvYFV_sD22sucopRwJxQGMLfpbCbmUzDmr2C4BwmRLUohx_aODnHKEGjMmigFzsZnPr4pJa8vGkFFas6wXLdA2iT6xlWby9F50N2k_jX_gHMaCK9) to create an interactive ERD for my README.
+
+```mermaid
+erDiagram
+    UserProfile {
+        int id
+        int user_id
+        string default_street_address1
+        string default_street_address2
+        string default_postcode
+        string default_town_or_city
+        string default_country
+        string default_county
+    }
+
+    Order {
+        int id
+        string order_number
+        int user_profile_id
+        string full_name
+        string email
+        string country
+        string postcode
+        string town_or_city
+        string street_address1
+        string street_address2
+        string county
+        datetime date
+        decimal order_total
+    }
+
+    OrderLineItem {
+        int id
+        int order_id
+        int product_id
+        int quantity
+        decimal lineitem_total
+    }
+
+    Cola {
+        int id
+        string product_name
+        string product_description
+        decimal price
+        string product_image
+        string ingredients
+        string nutrition_facts
+    }
+
+    Contact {
+        int id
+        string contact_full_name
+        string contact_email
+        string contact_ordernumber
+        string contact_issue
+        string contact_message
+    }
+
+    Contest {
+        int id
+        string contest_username
+        string contest_ordernumber
+    }
+
+    NewsletterSignup {
+        int id
+        string newsletter_first_name
+        string newsletter_email
+    }
+
+    UserProfile ||--o{ Order : "has orders"
+    Order ||--o{ OrderLineItem : "has line items"
+    OrderLineItem }o--|| Cola : "includes product"
+```
+
 ## Agile Development Process
 
 ### GitHub Projects
